@@ -1,0 +1,3 @@
+UCF101*
+*.pt
+env-activate.sh
