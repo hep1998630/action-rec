@@ -5,9 +5,9 @@ import cv2
 # Load a model
 model = YOLO("yolov8n-pose.pt")  # load an official model
 
-activity_name = "SalsaSpin"
+activity_name = "Basketball"
 
-video_path = f"UCF101/train/{activity_name}/v_{activity_name}_g01_c03.avi"
+video_path = f"ucf101-action-recognition/train/{activity_name}/v_{activity_name}_g01_c03.avi"
 
 cap = cv2.VideoCapture(video_path)
 
@@ -26,7 +26,8 @@ while True:
 
         cv2.imshow("output", results[0].plot())
     else: 
-        print(ret, " Frame not found")
+        pass
+        # print(ret, " Frame not found")
 
 
     if cv2.waitKey(1) & 0xFF == ord("q"): 

@@ -1,3 +1,5 @@
 UCF101*
 *.pt
 env-activate.sh
+*.zip
+ucf101-action-recognition/
